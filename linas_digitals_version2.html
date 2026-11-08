@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090d">
+<meta name="description" content="Linas Digitals — a digital asset management concept focused on clarity, transparency and responsible planning.">
+<title>LINAS-DIGITALS.NET | Digital Asset Management</title>
+<style>
+:root{--bg:#08090d;--panel:#11131a;--panel2:#171922;--gold:#d9b66d;--gold2:#f2d99c;--white:#f7f4ed;--muted:#aaa8a1;--line:#34312a;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#292316 0,transparent 38%),var(--bg);color:var(--white);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.noticebar{background:#17140e;border-bottom:1px solid #4c3d20;color:#e8d5a8;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.04em}
+header{position:sticky;top:0;z-index:5;background:#08090ded;backdrop-filter:blur(14px);border-bottom:1px solid #292720}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.12em;font-size:15px}.mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:20px}
+.brand small{display:block;font-size:9px;letter-spacing:.22em;color:var(--muted);font-weight:500;margin-top:2px}
+.links{display:flex;align-items:center;gap:30px;color:#c7c1b5;font-size:13px}.links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:1px solid var(--gold);border-radius:3px;padding:12px 19px;background:linear-gradient(120deg,#f0d99e,#c69b4d);color:#17130b;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--gold2);border-color:#74613b}.menu{display:none;background:none;border:1px solid #51462f;color:var(--gold2);padding:8px 11px;font-size:20px}
+.hero{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:54px;padding:88px 0 82px;min-height:600px}
+.kicker{color:var(--gold);font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:800}
+h1{font-family:Georgia,serif;font-size:clamp(43px,6vw,76px);line-height:1.03;font-weight:500;letter-spacing:-.035em;margin:19px 0 22px}
+h1 em{color:var(--gold2);font-weight:400}
+.lead{max-width:570px;color:#c0bdb5;font-size:17px;line-height:1.8}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0 26px}
+.trustline{display:flex;gap:22px;flex-wrap:wrap;color:#c5c0b5;font-size:11px;letter-spacing:.06em}.trustline span:before{content:"✦";color:var(--gold);margin-right:8px}
+.visual{min-height:420px;position:relative;display:grid;place-items:center}
+.orbit{position:absolute;width:min(100%,450px);aspect-ratio:1;border:1px solid #69552f;border-radius:50%;opacity:.65}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #4d422c;border-radius:50%;inset:10%}
+.orbit:after{inset:22%}
+.coinart{width:min(72%,310px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 28%,#f9e7b8,#b98a3e 42%,#3c2d15 72%,#0d0c09 75%);box-shadow:0 0 90px #d4a64b22, inset 0 0 0 7px #f2d99c55;position:relative}
+.coinart span{font-family:Georgia,serif;font-size:clamp(90px,15vw,160px);color:#261b0b;text-shadow:0 2px 1px #ffe8b0}
+.floatcard{position:absolute;right:0;bottom:30px;background:#12131aee;border:1px solid #5c4b2d;padding:15px 18px;max-width:220px;box-shadow:0 18px 50px #0008}
+.floatcard b{display:block;color:var(--gold2);font-family:Georgia,serif;font-size:17px;font-weight:500}.floatcard small{color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.rule{height:1px;background:linear-gradient(90deg,transparent,#6d5730,transparent)}
+.section{padding:76px 0}.sectionhead{max-width:680px;margin-bottom:32px}.section h2{font:500 clamp(32px,4vw,46px)/1.12 Georgia,serif;margin:12px 0;color:var(--white)}.sectionhead p{color:var(--muted);margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,#171922,#101117);border:1px solid #37332a;padding:27px 25px;min-height:220px}
+.card .num{font:italic 25px Georgia,serif;color:var(--gold)}.card h3{font:500 22px Georgia,serif;margin:17px 0 9px}.card p{color:var(--muted);font-size:14px;margin:0}
+.aboutgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}
+.aboutquote{border-left:2px solid var(--gold);padding:6px 0 6px 24px;font:italic 25px/1.45 Georgia,serif;color:#e5d6b5}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:22px}.value{border-top:1px solid #51452f;padding-top:16px}.value b{font:500 19px Georgia,serif}.value p{font-size:13px;color:var(--muted);margin:7px 0 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{border-top:1px solid var(--gold);padding:18px 14px 0 0}.step strong{font:500 21px Georgia,serif}.step p{font-size:13px;color:var(--muted)}
+.cta{background:linear-gradient(110deg,#201b10,#111218);border:1px solid #5c4a2b;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font:500 32px Georgia,serif;margin:0 0 8px}.cta p{color:var(--muted);margin:0}
+.disclosure{border:1px solid #5b4b2d;background:#17140e;color:#d9cba9;padding:18px 20px;font-size:12px;margin-top:25px}
+footer{border-top:1px solid #302c24;padding:28px 0 38px;color:#9e9a91;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:20px}
+.modal{display:none;position:fixed;inset:0;background:#000c;z-index:10;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modalbox{max-width:450px;background:#15161d;border:1px solid #76603a;padding:28px}.modalbox h3{font:500 27px Georgia,serif;margin:0 0 10px}.modalbox p{color:#c0bdb5;font-size:14px}.close{float:right;background:none;border:0;color:var(--gold2);font-size:24px;cursor:pointer}
+@media(max-width:800px){.links{display:none}.menu{display:block}.nav.open{height:auto;flex-wrap:wrap;padding:18px 0}.nav.open .links{display:flex;order:3;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding:12px 0}.hero{grid-template-columns:1fr;padding:58px 0 48px;gap:12px}.visual{min-height:330px}.grid3{grid-template-columns:1fr}.aboutgrid{grid-template-columns:1fr;gap:30px}.steps{grid-template-columns:1fr 1fr}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:480px){.wrap{width:min(var(--max),calc(100% - 32px))}.brand{font-size:12px}.hero{padding-top:46px}.lead{font-size:15px}.visual{min-height:280px}.floatcard{right:0;bottom:8px}.values{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.section{padding:56px 0}.cta{padding:25px}.trustline{gap:12px}}
+</style>
+</head>
+<body>
+<div class="noticebar">CONCEPT WEBSITE · INFORMATIONAL DEMO ONLY · NO CUSTOMER FUNDS ACCEPTED</div>
+<header>
+  <div class="wrap nav" id="nav">
+    <a class="brand" href="#top"><span class="mark">L</span><span>LINAS-DIGITALS.NET<small>DIGITAL ASSET MANAGEMENT CONCEPT</small></span></a>
+    <nav class="links" aria-label="Main navigation"><a href="#about">About</a><a href="#company">Company Profile</a><a href="#approach">Our Approach</a><a href="#policies">Policies</a><a href="#contact">Contact</a></nav>
+    <button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="kicker">A considered approach to digital assets</div>
+    <h1>Clarity for a more <em>confident</em> digital future.</h1>
+    <p class="lead">Linas Digitals is developing a digital asset management concept centered on clear information, thoughtful processes and responsible decision-making. Explore our approach and learn what a future service may involve.</p>
+    <div class="actions"><a class="btn" href="#about">Discover Linas Digitals <span>→</span></a><a class="btn ghost" href="#approach">Our principles</a></div>
+    <div class="trustline"><span>Transparency first</span><span>Risk awareness</span><span>Security-minded design</span></div>
+  </div>
+  <div class="visual" aria-label="Abstract gold digital asset illustration">
+    <div class="orbit"></div><div class="coinart"><span>₿</span></div>
+    <div class="floatcard"><small>Our commitment</small><b>Information before action</b><small>Learn · Understand · Decide</small></div>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="wrap section" id="about">
+  <div class="aboutgrid">
+    <div><div class="kicker">About the company</div><h2>Built around informed decisions.</h2></div>
+    <div><p class="aboutquote">“A strong financial decision begins with understanding the opportunity, the costs and the risks.”</p><p style="color:var(--muted)">Our current website is an early-stage company concept. We are shaping the information, service standards and safeguards that would be needed before offering any digital asset management service. We do not currently accept deposits or manage customer assets through this website.</p></div>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="wrap section" id="company">
+  <div class="aboutgrid">
+    <div><div class="kicker">Company profile</div><h2>A clear identity. A responsible foundation.</h2></div>
+    <div>
+      <p style="color:var(--muted)">LINAS-DIGITALS.NET is the working name for a digital asset management business concept currently in development. The project is focused on building an understandable, security-conscious experience and establishing the operational and compliance foundations required before any financial service could be offered.</p>
+      <p style="color:var(--muted)">At this stage, the website is informational only. No investment products are available, no customer accounts are opened, and no assets are accepted, held, traded or managed through this site.</p>
+      <div class="values" style="margin-top:24px">
+        <div class="value"><b>Business name</b><p>LINAS-DIGITALS.NET (working brand name)</p></div>
+        <div class="value"><b>Current status</b><p>Concept and website development</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="wrap section" id="approach">
+  <div class="sectionhead"><div class="kicker">Our approach</div><h2>Principles that guide the experience.</h2><p>Clear expectations matter in digital asset markets, where values can change quickly and losses are possible.</p></div>
+  <div class="grid3">
+    <article class="card"><div class="num">01</div><h3>Transparency</h3><p>Explain the service, fees, decision-making process and limitations in plain language before anyone makes a commitment.</p></article>
+    <article class="card"><div class="num">02</div><h3>Risk awareness</h3><p>Digital assets are volatile and may result in partial or total loss. No return is guaranteed, and every risk should be understood.</p></article>
+    <article class="card"><div class="num">03</div><h3>Security-minded design</h3><p>Any future service would require appropriate identity checks, account safeguards, custody controls and independent professional review.</p></article>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="wrap section">
+  <div class="sectionhead"><div class="kicker">What matters to us</div><h2>A thoughtful foundation.</h2></div>
+  <div class="values">
+    <div class="value"><b>Clear communication</b><p>People should know who they are dealing with and how to ask questions.</p></div>
+    <div class="value"><b>Responsible planning</b><p>Services should only be offered when operational and regulatory requirements are met.</p></div>
+    <div class="value"><b>Honest expectations</b><p>No fabricated performance history, guaranteed returns or misleading claims.</p></div>
+    <div class="value"><b>Customer protection</b><p>Privacy, security and transparent complaint processes must be designed from the start.</p></div>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="wrap section" id="process">
+  <div class="sectionhead"><div class="kicker">The development journey</div><h2>From concept to responsible service.</h2><p>These are development stages, not instructions to deposit or invest.</p></div>
+  <div class="steps">
+    <div class="step"><strong>01 · Define</strong><p>Set out the business model, target market and proposed services.</p></div>
+    <div class="step"><strong>02 · Review</strong><p>Obtain qualified legal and regulatory advice for every relevant jurisdiction.</p></div>
+    <div class="step"><strong>03 · Safeguard</strong><p>Design custody, security, compliance, disclosures and operational controls.</p></div>
+    <div class="step"><strong>04 · Validate</strong><p>Only consider launch after required approvals and independent testing are complete.</p></div>
+  </div>
+  <div class="disclosure"><strong>Important notice:</strong> This is an informational concept website, not an investment offer, financial promotion, trading service or solicitation. No accounts, deposits, withdrawals or investment management are available here. Cryptocurrency and other digital assets are high-risk and can lose substantial or all of their value. Do not send cryptocurrency or personal financial information to this website.</div>
+</section>
+<div class="rule"></div>
+<section class="wrap section" id="policies">
+  <div class="sectionhead"><div class="kicker">Important information</div><h2>Policies and disclosures.</h2><p>These preliminary notices explain the current limits of this demonstration website. They are not a substitute for final, jurisdiction-specific legal documents.</p></div>
+  <div class="grid3">
+    <article class="card"><div class="num">A</div><h3>Privacy notice</h3><p>This static demo does not provide registration, contact forms, payment processing or account storage. Do not submit personal, identity, wallet or financial information through this site.</p></article>
+    <article class="card"><div class="num">B</div><h3>Website terms</h3><p>Content is provided for general information about a business concept only. It is not an offer, invitation, recommendation or agreement to provide investment services.</p></article>
+    <article class="card"><div class="num">C</div><h3>Digital asset risk</h3><p>Cryptoassets are volatile and may be illiquid, stolen, inaccessible or lose some or all of their value. Past performance, where available, would not guarantee future results.</p></article>
+  </div>
+  <div class="disclosure"><strong>Before any future launch:</strong> These notices must be reviewed and replaced or supplemented by qualified legal and compliance professionals for the countries where the business would operate. Applicable licensing, registration, custody, anti-money-laundering, consumer-protection and data-protection requirements must be assessed and satisfied before offering services.</div>
+</section>
+<section class="wrap section" id="contact">
+  <div class="cta"><div><div class="kicker">Contact</div><h2>Official contact details are being established.</h2><p>No public business email or enquiry form is available yet. Please do not send funds, wallet credentials or identity documents.</p></div><button class="btn ghost" onclick="openInfo()">View contact notice</button></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div>© <span id="year"></span> LINAS-DIGITALS.NET · Concept website</div><div class="footlinks"><a href="#company">Company</a><a href="#policies">Policies</a><a href="#contact">Contact</a></div></div></footer>
+<div class="modal" id="info" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalbox"><button class="close" onclick="closeInfo()" aria-label="Close">×</button><h3 id="modalTitle">Contact details coming soon</h3><p>Official business contact details have not yet been established. This static demonstration does not collect messages or store personal information. Never send cryptocurrency, passwords, seed phrases or identity documents to this website.</p><button class="btn" onclick="closeInfo()">Close</button></div></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function openInfo(){document.getElementById('info').classList.add('show')}
+function closeInfo(){document.getElementById('info').classList.remove('show')}
+document.getElementById('info').addEventListener('click',e=>{if(e.target.id==='info')closeInfo()});
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
